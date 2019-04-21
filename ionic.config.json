@@ -1,0 +1,72 @@
+{
+  "name": "ionicProject",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ],
+  "proxies": [
+    {
+      "path": "/login",
+      "proxyUrl": "http://localhost:8000/login"
+    },
+    {
+      "path": "/verif",
+      "proxyUrl": "http://localhost:8000/verif"
+    },
+    {
+      "path": "/createUser",
+      "proxyUrl": "http://localhost:8000/createUser"
+    },
+    {
+      "path": "/getTask",
+      "proxyUrl": "http://localhost:8000/getTask"
+    },
+    {
+      "path": "/getList",
+      "proxyUrl": "http://localhost:8000/getList"
+    },
+    {
+      "path": "/getListP",
+      "proxyUrl": "http://localhost:8000/getListP"
+    },
+    {
+      "path": "/createToDo",
+      "proxyUrl": "http://localhost:8000/createToDo"
+    },
+    {
+      "path": "/deleteToDo",
+      "proxyUrl": "http://localhost:8000/deleteToDo"
+    },
+    {
+      "path": "/updateToDo",
+      "proxyUrl": "http://localhost:8000/updateToDo"
+    },
+    {
+      "path": "/checkToDo",
+      "proxyUrl": "http://localhost:8000/checkToDo"
+    },
+    {
+      "path": "/createList",
+      "proxyUrl": "http://localhost:8000/createList"
+    },
+    {
+      "path": "/deleteList",
+      "proxyUrl": "http://localhost:8000/deleteList"
+    },
+    {
+      "path": "/updateList",
+      "proxyUrl": "http://localhost:8000/updateList"
+    },
+    {
+      "path": "/share",
+      "proxyUrl": "http://localhost:8000/share"
+    }
+  ],
+  "id": "5ea3cb50"
+}

@@ -1,0 +1,54 @@
+<ion-modal-view>
+    <button class="button button-clear button-small button-calm" ng-click="modalTask.hide()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <div class="list" ng-model="listeData">
+        <h3 class="item item-divider" ng-model="listeActive">{{listeActive.name}}</h3>
+        <div ng-repeat="task in tache[$index]">
+          <a class="item item-button-right" >
+            <input type="checkbox" id="check" class="left" id="done" ng-click="checkToDo(task._id,task.ok)" ng-checked="task.ok">                           
+            {{task.name}}
+            <div class="buttons">
+              <button class="button button-energized" onClick="$('#updateTask').toggle();" ng-click="updateTaskToggle(task)">
+                <i class="fas fa-pencil-alt"></i>
+              </button>
+              <button class="button button-assertive" ng-click="deleteToDo(task._id)">
+                  <i class="fas fa-trash"></i>
+                </button>
+            </div>
+          </a>
+ 
+        </div>
+        <a class="item"  id="updateTask"  style="display:none;" ng-model="toggleUT">
+                <div class="list">
+                  <div class="item item-input-inset">
+                    <label class="item-input-wrapper">
+                      <input type="text" placeholder="new name" ng-model="updateData.text">
+                    </label>
+                    <button class="button button-small" ng-click="updateToDo(task._id)" onClick="$('#updateTask').toggle();">
+                      update
+                    </button>
+                  </div>
+                </div>
+              </a>
+    </div>
+    <ion-footer>
+            <ion-toolbar>
+              <ion-title class="item item-divider">Add a task</ion-title>
+              <div class="list">
+                  <div class="item item-input-inset">
+                    <label class="item-input-wrapper">
+                      <input type="text" placeholder="list's name" ng-model="nameTask.text">
+                    </label>
+                    <button class="button button-small button-energized" ng-click="createToDo()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+            </ion-toolbar>
+          </ion-footer>
+</ion-modal-view>
+
+
+              

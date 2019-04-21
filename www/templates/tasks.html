@@ -1,0 +1,83 @@
+
+
+<div class="bar bar-header">
+  <h4 class="title" ng-model="user">Welcome {{user.username}} !</h4> 
+  <button class="button  ion-log-out  button-assertive" type="submit" ng-click="deconnexion()"></button>
+</div>
+
+
+<ion-content class="has-header">
+    <div class="list">
+        <h3 class="item item-divider">Your lists</h3>
+        <div ng-repeat="list in Liste" >
+          <a class="item item-button-right" >
+            <p ng-click="openTaskList(list)" style="cursor:pointer;">{{list.name}}</p>
+            <div class="buttons">
+              <button class="button button-calm" onClick="$('#share').toggle();" ng-click="shareToggle(list)">
+                <i class="fas fa-share-alt"></i>
+              </button>
+              
+              <button class="button button-energized" onClick="$('#update').toggle();" ng-click="updateToggle(list)">
+                <i class="fas fa-pencil-alt"></i>
+              </button>
+
+              <button class="button button-assertive" ng-click="deleteList(list._id)">
+                  <i class="fas fa-trash"></i>
+                </button>
+            </div>
+          </a>
+        </div>
+        <a class="item"  id="update"  style="display:none;" ng-model="toggleU">
+            <div class="list">
+              <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                  <input type="text" placeholder="new name" ng-model="updateListe.text">
+                </label>
+                <button class="button button-small" ng-click="updateList()" onClick="$('#update').toggle();">
+                  update
+                </button>
+              </div>
+            </div>
+          </a>
+        <a class="item" id="share" style="display:none;" ng-model="toggleS">
+            <div class="list">
+              <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                  <input type="text" placeholder="collaborater" ng-model="collab.text">
+                </label>
+                <button class="button button-small" ng-click="share()" onClick="$('#share').toggle();">
+                  share
+                </button>
+              </div>
+            </div>
+          </a>
+      </div>
+
+  <div class="list">
+    <h3 class="item item-divider">Lists shared with you</h3>
+    <div ng-repeat="listP in ListeP" ng-click="openTaskListP(listP)">
+      <div class="item item-button-right" >
+          <p style="cursor:pointer;">{{listP.name}}</p>
+      </div>
+    </div>
+  </div>
+
+  <ion-footer>
+      <ion-toolbar>
+        <ion-title class="item item-divider">Add a list</ion-title>
+        <div class="list">
+            <div class="item item-input-inset">
+              <label class="item-input-wrapper">
+                <input type="text" placeholder="list's name" ng-model="nameList.text">
+              </label>
+              <button class="button button-small button-energized" ng-click="createList()">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+      </ion-toolbar>
+    </ion-footer>
+</ion-content>
+
+
+</ion-side-menu-content>          

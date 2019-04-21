@@ -1,0 +1,34 @@
+<ion-modal-view>
+        <button class="button button-clear button-small button-calm" ng-click="modalTaskP.hide()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+    
+        <div class="list" ng-model="listeData">
+            <h3 class="item item-divider" ng-model="listeActive">{{listeActive.name}}</h3>
+            <div ng-repeat="taskP in tacheP[$index]">
+              <a class="item item-button-right" >
+                <input type="checkbox" id="check" class="left" id="done" ng-click="checkToDo(taskP._id,taskP.ok)" ng-checked="taskP.ok">                           
+                {{taskP.name}}
+              </a>
+            </div>
+        </div>
+        <ion-footer>
+                <ion-toolbar>
+                  <ion-title class="item item-divider">Add a task</ion-title>
+                  <div class="list">
+                      <div class="item item-input-inset">
+                        <label class="item-input-wrapper">
+                          <input type="text" placeholder="list's name" ng-model="nameTask.text">
+                        </label>
+                        <button class="button button-small button-energized" ng-click="createToDo()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                </ion-toolbar>
+              </ion-footer>
+    </ion-modal-view>
+    
+    
+                  
+    
