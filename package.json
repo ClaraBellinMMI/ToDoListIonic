@@ -15,6 +15,9 @@
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^3.1.0"
   },
+  "scripts": {
+    "start": "ionic serve"
+  },
   "dependencies": {
     "ionic": "^4.12.0",
     "@ionic/pro": "2.0.4",
