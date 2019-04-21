@@ -13,7 +13,7 @@
   "proxies": [
     {
       "path": "/login",
-      "proxyUrl": "https://todolistionic-bellin.herokuapp.com/login"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/login"
     },
     {
       "path": "/verif",
