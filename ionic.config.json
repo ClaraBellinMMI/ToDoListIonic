@@ -13,59 +13,59 @@
   "proxies": [
     {
       "path": "/login",
-      "proxyUrl": "http://localhost:8000/login"
+      "proxyUrl": "https://todolistionic-bellin.herokuapp.com/login"
     },
     {
       "path": "/verif",
-      "proxyUrl": "http://localhost:8000/verif"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/verif"
     },
     {
       "path": "/createUser",
-      "proxyUrl": "http://localhost:8000/createUser"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/createUser"
     },
     {
       "path": "/getTask",
-      "proxyUrl": "http://localhost:8000/getTask"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/getTask"
     },
     {
       "path": "/getList",
-      "proxyUrl": "http://localhost:8000/getList"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/getList"
     },
     {
       "path": "/getListP",
-      "proxyUrl": "http://localhost:8000/getListP"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/getListP"
     },
     {
       "path": "/createToDo",
-      "proxyUrl": "http://localhost:8000/createToDo"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/createToDo"
     },
     {
       "path": "/deleteToDo",
-      "proxyUrl": "http://localhost:8000/deleteToDo"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/deleteToDo"
     },
     {
       "path": "/updateToDo",
-      "proxyUrl": "http://localhost:8000/updateToDo"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/updateToDo"
     },
     {
       "path": "/checkToDo",
-      "proxyUrl": "http://localhost:8000/checkToDo"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/checkToDo"
     },
     {
       "path": "/createList",
-      "proxyUrl": "http://localhost:8000/createList"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/createList"
     },
     {
       "path": "/deleteList",
-      "proxyUrl": "http://localhost:8000/deleteList"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/deleteList"
     },
     {
       "path": "/updateList",
-      "proxyUrl": "http://localhost:8000/updateList"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/updateList"
     },
     {
       "path": "/share",
-      "proxyUrl": "http://localhost:8000/share"
+      "proxyUrl": "http://todolistionic-bellin.herokuapp.com/share"
     }
   ],
   "id": "5ea3cb50"
