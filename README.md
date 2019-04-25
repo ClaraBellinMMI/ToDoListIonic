@@ -25,5 +25,5 @@ Puis lancer Ionic :
 
 ionic serve
 
-#lien heroku de l'application ionic
+# lien heroku de l'application ionic
 https://todolistionic-bellin.herokuapp.com/
